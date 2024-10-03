@@ -1,0 +1,27 @@
+:root {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --body-bg: #fafafa;
+    --body-color: #333;
+    --button-bg: #222222;
+    --button-color: #fafafa;
+    --button-hover: #0e0e0e;
+    --input-bg: #f0f0f0;
+    --input-color: #333;
+}
+
+.dark-mode:root {
+    --body-bg: #202020;
+    --body-color: #fafafa;
+    --button-bg: #fafafa;
+    --button-color: #333;
+    --button-hover: #f0f0f0;
+    --input-bg: #333;
+    --input-color: #fafafa;
+}

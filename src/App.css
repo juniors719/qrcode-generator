@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--body-bg);
+    color: var(--body-color);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #b6b6b6;
+    margin: 30px;
+    background-color: var(--input-bg);
+    color: var(--input-color);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.botao_salvar {
+    background-color: var(--button-bg);
+    color: var(--button-color);
+    font-weight: bold;
+    cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.botao_salvar:hover {
+    background-color: var(--button-hover);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.qrcode {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
