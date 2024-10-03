@@ -3,10 +3,13 @@ import QRCodeLink from "qrcode";
 import { useState } from "react";
 import "./App.css";
 
+import { MdOutlineLightMode } from "react-icons/md";
+import { MdOutlineDarkMode } from "react-icons/md";
+
 function App() {
     const [text, setText] = useState("");
     const [qrCode, setQrCode] = useState("");
-    // const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
 
     const handleChange = (e) => {
         setText(e.target.value);
@@ -26,8 +29,12 @@ function App() {
         );
     };
 
+    const toggleTheme = () => {
+        setDarkMode(!darkMode);
+    };
+
     return (
-        <div className="container">
+        <div className={`container ${darkMode ? "dark-mode" : ""}`}>
             <h1>QR Code Generator</h1>
             <input
                 type="text"
@@ -41,6 +48,9 @@ function App() {
             <a href={qrCode} download={"qrcode.png"} className="botao_salvar">
                 Download
             </a>
+            <button onClick={toggleTheme} className="dark-mode-toggle">
+                {darkMode ? <MdOutlineLightMode /> : <MdOutlineDarkMode />}
+            </button>
         </div>
     );
 }
